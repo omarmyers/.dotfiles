@@ -43,13 +43,13 @@
 # resize-overlay-duration = 4s 200ms
 window-theme = dark
 
-font-family = CaskaydiaCove Nerd Font
-font-size = 10
+# font-family = CaskaydiaCove Nerd Font
+# font-size = 10
 # theme = nord
-theme = catppuccin-mocha
+theme = "Catppuccin Mocha"
 # theme = rose-pine-moon
 # custom-shader = /home/omarmyers/.config/ghostty/ghostty-shaders/just-snow.glsl
-window-decoration = none
-background-opacity = 0.85
+# window-decoration = none
+background-opacity = 0.75
 background-blur = true
 keybind = shift+enter=text:\n
