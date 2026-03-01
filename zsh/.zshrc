@@ -186,7 +186,7 @@ export NVM_DIR="$HOME/.nvm"
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
-alias claude="/home/omarmyers/.claude/local/claude"
+export PATH="/home/omarmyers/.local/bin:$PATH"
 
 # opencode
 export PATH=/home/omarmyers/.opencode/bin:$PATH
