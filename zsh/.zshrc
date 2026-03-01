@@ -4,12 +4,14 @@
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
+
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time Oh My Zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 # ZSH_THEME="half-life"
-ZSH_THEME="typewritten"
+# ZSH_THEME="typewritten"
+ZSH_THEME=""
 
 export GOPATH=$(go env GOPATH)
 export GOBIN=$GOPATH/bin
@@ -19,8 +21,10 @@ export PATH=$PATH:$GOBIN
 export JAVA_HOME="/usr/lib/jvm/java-21-openjdk-amd64"
 export PATH=$JAVA_HOME/bin:$PATH
 
-export TYPEWRITTEN_PROMPT_LAYOUT="pure"
-export TYPEWRITTEN_SYMBOL="->"
+# TypeWritten Theme
+# export TYPEWRITTEN_PROMPT_LAYOUT="pure"
+# export TYPEWRITTEN_SYMBOL="->"
+
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in $ZSH/themes/
@@ -121,6 +125,9 @@ source $ZSH/oh-my-zsh.sh
 # Zoxide initialization
 eval "$(zoxide init zsh --cmd z)"
 
+# Starhip initialization
+eval "$(starship init zsh)"
+
 # Custom git shorthands
 alias gs='git status'
 alias gsw='git switch'
@@ -129,6 +136,7 @@ alias gba='git branch -a'
 alias gbd='git branch -d'
 alias gbD='git branch -D'
 alias gbr='git branch --remote'
+alias gbprune="git fetch -p && git branch -vv | grep ': gone]' | awk '{print $1}' | xargs -r git branch -d"
 alias gprune='git remote prune origin'
 alias gbmrg='git branch --merged'
 alias gbun='git branch --no-merged'
@@ -157,6 +165,12 @@ alias v.="nvim ."
 alias dcu="docker compose up"
 # alias dcud="docker compose up -d"
 alias dcd="docker compose down"
+alias gw="./gradlew"
+alias gwc="./gradlew compileJava"
+alias gwb="./gradlew build"
+alias gwt="./gradlew test"
+alias gwr="./gradlew bootRun"
+alias gwj="./gradlew bootJar"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -173,3 +187,6 @@ export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
 alias claude="/home/omarmyers/.claude/local/claude"
+
+# opencode
+export PATH=/home/omarmyers/.opencode/bin:$PATH
