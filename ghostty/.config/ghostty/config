@@ -49,7 +49,7 @@ window-theme = dark
 theme = "Catppuccin Mocha"
 # theme = rose-pine-moon
 # custom-shader = /home/omarmyers/.config/ghostty/ghostty-shaders/just-snow.glsl
-# window-decoration = none
+window-decoration = none
 background-opacity = 0.75
 background-blur = true
 keybind = shift+enter=text:\n
