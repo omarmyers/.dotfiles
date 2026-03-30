@@ -8,6 +8,10 @@ return {
       require('catppuccin').setup {
         flavour = 'mocha',
         transparent_background = true,
+        float = {
+          transparent = true,
+          solid = false,
+        },
         integrations = {
           aerial = true,
           alpha = true,
@@ -115,6 +119,14 @@ return {
       }
 
       -- vim.cmd.colorscheme('cyberdream')
+    end,
+  },
+  {
+    'Mofiqul/dracula.nvim',
+    priority = 1000,
+    config = function()
+      require('dracula').setup {}
+      -- vim.cmd.colorscheme('dracula')
     end,
   },
 }

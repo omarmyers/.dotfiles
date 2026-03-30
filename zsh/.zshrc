@@ -21,6 +21,10 @@ export PATH=$PATH:$GOBIN
 export JAVA_HOME="/usr/lib/jvm/java-21-openjdk-amd64"
 export PATH=$JAVA_HOME/bin:$PATH
 
+# autoload -U compinit
+# compinit
+# source <(jj util completion zsh)
+#
 # TypeWritten Theme
 # export TYPEWRITTEN_PROMPT_LAYOUT="pure"
 # export TYPEWRITTEN_SYMBOL="->"
@@ -187,6 +191,7 @@ export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
 export PATH="/home/omarmyers/.local/bin:$PATH"
+alias claude="/home/omarmyers/.claude/local/claude"
 
 # opencode
 export PATH=/home/omarmyers/.opencode/bin:$PATH

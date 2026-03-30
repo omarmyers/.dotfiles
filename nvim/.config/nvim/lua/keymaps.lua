@@ -55,6 +55,10 @@ vim.keymap.set('n', '<leader>8', ':BufferLineGoToBuffer 8<CR>', { desc = 'Go to 
 vim.keymap.set('n', '<leader>9', ':BufferLineGoToBuffer 9<CR>', { desc = 'Go to Buffer 9' })
 vim.keymap.set('n', '<leader>bd', ':Bdelete<CR>', { desc = 'Delete Buffer' })
 
+vim.keymap.set('n', '<leader>up', function()
+  require('jdtls').update_project_config()
+end, { desc = 'Update Java Project' })
+
 -- Move Lines
 --vim.keymap.set('n', '<A-j>', "<cmd>execute 'move .+' . v:count1<cr>==", { desc = 'Move Down' })
 --vim.keymap.set('n', '<A-k>', "<cmd>execute 'move .-' . (v:count1 + 1)<cr>==", { desc = 'Move Up' })

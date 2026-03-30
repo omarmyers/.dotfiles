@@ -44,7 +44,7 @@
 window-theme = dark
 
 # font-family = CaskaydiaCove Nerd Font
-# font-size = 10
+font-size = 10
 # theme = nord
 theme = "Catppuccin Mocha"
 # theme = rose-pine-moon

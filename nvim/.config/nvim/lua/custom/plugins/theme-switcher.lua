@@ -8,6 +8,7 @@ return {
           'tokyonight-moon',
           'tokyonight-night',
           'tokyonight-storm',
+          'dracula',
           'catppuccin-mocha',
           'catppuccin-macchiato',
           'cyberdream',
