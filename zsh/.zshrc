@@ -158,10 +158,10 @@ alias clr='clear'
 alias sat='sudo apt'
 alias lg='lazygit'
 alias zel='zellij'
-alias cab='cargo build'
-alias car='cargo run'
-alias cat='cargo test'
-alias caf='cargo fmt'
+alias crb='cargo build'
+alias crr='cargo run'
+alias crt='cargo test'
+alias crf='cargo fmt'
 alias nrd='npm run dev'
 alias zel='zellij'
 alias v="nvim"
@@ -190,8 +190,12 @@ export NVM_DIR="$HOME/.nvm"
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
-export PATH="/home/omarmyers/.local/bin:$PATH"
-alias claude="/home/omarmyers/.claude/local/claude"
+export PATH="$HOME/.local/bin:$PATH"
+alias claude="$HOME/.local/share/claude/versions/2.1.87"
+
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$SDKMAN_DIR/bin/sdkman-init.sh" ]] && source "$SDKMAN_DIR/bin/sdkman-init.sh"
 
 # opencode
-export PATH=/home/omarmyers/.opencode/bin:$PATH
+# export PATH=/home/omarmyers/.opencode/bin:$PATH
+# export PATH="$HOME/.local/bin:$PATH"
