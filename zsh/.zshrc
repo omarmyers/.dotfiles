@@ -17,8 +17,8 @@ export GOPATH=$(go env GOPATH)
 export GOBIN=$GOPATH/bin
 export PATH=$PATH:$GOBIN
 
-# Java
-export JAVA_HOME="/usr/lib/jvm/java-21-openjdk-amd64"
+# Java - managed by sdkman
+export JAVA_HOME="$HOME/.sdkman/candidates/java/current"
 export PATH=$JAVA_HOME/bin:$PATH
 
 # autoload -U compinit
@@ -199,3 +199,8 @@ export SDKMAN_DIR="$HOME/.sdkman"
 # opencode
 # export PATH=/home/omarmyers/.opencode/bin:$PATH
 # export PATH="$HOME/.local/bin:$PATH"
+
+export PATH=$PATH:/home/omarmyers/.spicetify
+
+# opencode
+export PATH=/home/omarmyers/.opencode/bin:$PATH

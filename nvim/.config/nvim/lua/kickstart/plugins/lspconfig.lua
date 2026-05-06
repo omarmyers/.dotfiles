@@ -363,12 +363,16 @@ return {
             }
           end,
           jdtls = function()
+            vim.env.JAVA_HOME = vim.fn.expand '~/.sdkman/candidates/java/21-tem'
             require('java').setup {
               -- Your custom jdtls setings goes here
             }
 
             require('lspconfig').jdtls.setup {
               -- Your custom nvim-java configuration goes here
+              -- cmd_env = {
+              --   JAVA_HOME = vim.fs.expand '~/.sdkman/candidates/java/21-tem',
+              -- },
             }
           end,
         },
