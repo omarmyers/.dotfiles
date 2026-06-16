@@ -54,6 +54,7 @@ vim.keymap.set('n', '<leader>7', ':BufferLineGoToBuffer 7<CR>', { desc = 'Go to 
 vim.keymap.set('n', '<leader>8', ':BufferLineGoToBuffer 8<CR>', { desc = 'Go to Buffer 8' })
 vim.keymap.set('n', '<leader>9', ':BufferLineGoToBuffer 9<CR>', { desc = 'Go to Buffer 9' })
 vim.keymap.set('n', '<leader>bd', ':Bdelete<CR>', { desc = 'Delete Buffer' })
+vim.keymap.set('n', '<leader>bD', ':%bd<CR>', { desc = 'Delete All Buffers' })
 
 vim.keymap.set('n', '<leader>up', function()
   require('jdtls').update_project_config()
